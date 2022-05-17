@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-serhadblogtasarim-dev-161111-authRole",
+      "UnauthRoleArn": "arn:aws:iam::527579241992:role/amplify-serhadblogtasarim-dev-161111-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::527579241992:role/amplify-serhadblogtasarim-dev-161111-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-serhadblogtasarim-dev-161111-deployment",
+      "UnauthRoleName": "amplify-serhadblogtasarim-dev-161111-unauthRole",
+      "StackName": "amplify-serhadblogtasarim-dev-161111",
+      "StackId": "arn:aws:cloudformation:eu-central-1:527579241992:stack/amplify-serhadblogtasarim-dev-161111/d44e9e10-d5e2-11ec-bb9d-064d0f6b6226",
+      "AmplifyAppId": "d13y70rps42rly"
+    },
+    "categories": {
+      "auth": {
+        "serhadblogtasarimf05e6292": {}
+      }
+    }
+  }
+}

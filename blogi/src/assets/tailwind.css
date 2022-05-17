@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.alert-danger {
+    @apply bg-pink-700 text-white/70 text-xs py-2 px-2 border border-l-4 border-pink-900 border-y-0 border-r-0
+}
+
+.alert-success {
+    @apply bg-green-700 text-white/70 text-xs py-2 px-2 border border-l-4 border-green-900 border-y-0 border-r-0
+}
+
+input {
+    @apply outline-none
+}
+
+.input-login {
+    @apply text-sm py-1.5 shadow text-slate-100 caret-pink-600 px-2 rounded-sm bg-slate-400 placeholder-slate-300
+}
+
+.input-general {
+    @apply text-sm py-1.5 shadow text-slate-700 border border-slate-300 caret-slate-800 px-2 rounded-md placeholder-slate-300
+}
