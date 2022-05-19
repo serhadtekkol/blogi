@@ -1,25 +1,25 @@
-import { createPosts } from "../../graphql/mutations"
+import { createIcerik } from "../../graphql/mutations"
 
 import { API, graphqlOperation } from "aws-amplify"
 
-import { createPosts as createPostMutation } from "../../graphql/mutations";
+import { createIcerik as createIcerikMutation } from "../../graphql/mutations";
 
-import { getPosts as getPostQuery } from "../../graphql/queries"
+import { getIcerik as getIcerikQuery } from "../../graphql/queries"
 
-import { listPosts as listPostQuery } from "../../graphql/queries"
+import { listIceriks as listIcerikQuery } from "../../graphql/queries"
 
 
 export const postInfo = {
     namespaced: true,
     state: {
 
-        posts: null,
+        postss: null,
         categories: null,
         tags: null
     },
     mutations: {
         setPosts(state, payload) {
-            state.posts = payload;
+            state.postss = payload;
         }
 
 
@@ -30,8 +30,8 @@ export const postInfo = {
 
         async createPosts({ dispatch }, newPost) {
             try {
-                await API.graphql(graphqlOperation(createPostMutation, { input: newPost }))
-                dispatch("getPostsData");
+                await API.graphql(graphqlOperation(createIcerikMutation, { input: newPost }))
+                dispatch("getIcerikData");
                 console.log("kaydedildi")
             } catch (error) {
                 console.error("Createpost ", error)
@@ -42,14 +42,14 @@ export const postInfo = {
 
         async getPosts(_, postid) {
 
-            return await API.graphql(graphqlOperation(getPostQuery, {
+            return await API.graphql(graphqlOperation(getIcerikQuery, {
                 id: postid
             }))
 
         },
-        async getPostsData({ commit }) {
+        async getIcerikData({ commit }) {
 
-            const postData = await API.graphql(graphqlOperation(listPostQuery));
+            const postData = await API.graphql(graphqlOperation(listIcerikQuery));
             console.log(postData)
             commit("setPosts", postData.data.listPosts.items)
 
@@ -59,7 +59,7 @@ export const postInfo = {
 
     },
     getters: {
-        posts: (state) => state.posts
+        postss: (state) => state.postss
 
     }
 }
