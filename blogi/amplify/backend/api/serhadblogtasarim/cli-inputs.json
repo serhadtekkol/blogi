@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "serhadblogtasarim",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "D:\\VueProjects\\blogi\\blogi\\amplify\\backend\\api\\serhadblogtasarim\\schema.graphql",
+    "defaultAuthType": {
+      "mode": "API_KEY",
+      "expirationTime": 7
+    }
+  }
+}

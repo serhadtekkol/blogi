@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import LoginView from '../views/Login.vue'
 import dashboardView from '../views/adminpages/dashboard.vue'
+import Posts from "../views/posts.vue"
 import { Auth } from 'aws-amplify'
 
 
@@ -20,6 +21,10 @@ const router = createRouter({
             component: LoginView
         },
         {
+            path: '/post/:id',
+            name: 'posts',
+            component: Posts
+        }, {
             path: '/private',
             name: 'admin',
             component: dashboardView,

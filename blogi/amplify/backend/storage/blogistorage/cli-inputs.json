@@ -1,0 +1,14 @@
+{
+  "resourceName": "blogistorage",
+  "policyUUID": "a6e2df2e",
+  "bucketName": "serhadblogtasarimc7ea3172c8cd40c180df40d3b54c56",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}
