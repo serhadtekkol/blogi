@@ -20,3 +20,11 @@ input {
 .input-general {
     @apply text-sm py-1.5 shadow text-slate-700 border border-slate-300 caret-slate-800 px-2 rounded-md placeholder-slate-300
 }
+
+.e-but {
+    @apply border-r border-slate-300 px-1 py-2 text-sm
+}
+
+.e-but:hover {
+    @apply bg-slate-200
+}

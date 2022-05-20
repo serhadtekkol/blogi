@@ -28,7 +28,7 @@ export const postInfo = {
     },
     actions: {
 
-        async createPosts({ dispatch }, newPost) {
+        async createIcerik({ dispatch }, newPost) {
             try {
                 await API.graphql(graphqlOperation(createIcerikMutation, { input: newPost }))
                 dispatch("getIcerikData");
@@ -40,7 +40,7 @@ export const postInfo = {
         },
 
 
-        async getPosts(_, postid) {
+        async getIcerik(_, postid) {
 
             return await API.graphql(graphqlOperation(getIcerikQuery, {
                 id: postid
@@ -51,7 +51,7 @@ export const postInfo = {
 
             const postData = await API.graphql(graphqlOperation(listIcerikQuery));
             console.log(postData)
-            commit("setPosts", postData.data.listPosts.items)
+            commit("setPosts", postData.data.listIceriks.items)
 
         }
 

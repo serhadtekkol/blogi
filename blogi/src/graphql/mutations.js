@@ -1,99 +1,99 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const createCategories = /* GraphQL */ `
-  mutation CreateCategories(
-    $input: CreateCategoriesInput!
-    $condition: ModelCategoriesConditionInput
+export const createKategoriler = /* GraphQL */ `
+  mutation CreateKategoriler(
+    $input: CreateKategorilerInput!
+    $condition: ModelKategorilerConditionInput
   ) {
-    createCategories(input: $input, condition: $condition) {
+    createKategoriler(input: $input, condition: $condition) {
       id
       name
       active
       createdAt
       updatedAt
-      postsCategoryId
+      icerikCategoryId
     }
   }
 `;
-export const updateCategories = /* GraphQL */ `
-  mutation UpdateCategories(
-    $input: UpdateCategoriesInput!
-    $condition: ModelCategoriesConditionInput
+export const updateKategoriler = /* GraphQL */ `
+  mutation UpdateKategoriler(
+    $input: UpdateKategorilerInput!
+    $condition: ModelKategorilerConditionInput
   ) {
-    updateCategories(input: $input, condition: $condition) {
+    updateKategoriler(input: $input, condition: $condition) {
       id
       name
       active
       createdAt
       updatedAt
-      postsCategoryId
+      icerikCategoryId
     }
   }
 `;
-export const deleteCategories = /* GraphQL */ `
-  mutation DeleteCategories(
-    $input: DeleteCategoriesInput!
-    $condition: ModelCategoriesConditionInput
+export const deleteKategoriler = /* GraphQL */ `
+  mutation DeleteKategoriler(
+    $input: DeleteKategorilerInput!
+    $condition: ModelKategorilerConditionInput
   ) {
-    deleteCategories(input: $input, condition: $condition) {
+    deleteKategoriler(input: $input, condition: $condition) {
       id
       name
       active
       createdAt
       updatedAt
-      postsCategoryId
+      icerikCategoryId
     }
   }
 `;
-export const createTags = /* GraphQL */ `
-  mutation CreateTags(
-    $input: CreateTagsInput!
-    $condition: ModelTagsConditionInput
+export const createAnahtarlar = /* GraphQL */ `
+  mutation CreateAnahtarlar(
+    $input: CreateAnahtarlarInput!
+    $condition: ModelAnahtarlarConditionInput
   ) {
-    createTags(input: $input, condition: $condition) {
+    createAnahtarlar(input: $input, condition: $condition) {
       id
       tagName
       createdAt
       updatedAt
-      postsTagsId
+      icerikTagsId
     }
   }
 `;
-export const updateTags = /* GraphQL */ `
-  mutation UpdateTags(
-    $input: UpdateTagsInput!
-    $condition: ModelTagsConditionInput
+export const updateAnahtarlar = /* GraphQL */ `
+  mutation UpdateAnahtarlar(
+    $input: UpdateAnahtarlarInput!
+    $condition: ModelAnahtarlarConditionInput
   ) {
-    updateTags(input: $input, condition: $condition) {
+    updateAnahtarlar(input: $input, condition: $condition) {
       id
       tagName
       createdAt
       updatedAt
-      postsTagsId
+      icerikTagsId
     }
   }
 `;
-export const deleteTags = /* GraphQL */ `
-  mutation DeleteTags(
-    $input: DeleteTagsInput!
-    $condition: ModelTagsConditionInput
+export const deleteAnahtarlar = /* GraphQL */ `
+  mutation DeleteAnahtarlar(
+    $input: DeleteAnahtarlarInput!
+    $condition: ModelAnahtarlarConditionInput
   ) {
-    deleteTags(input: $input, condition: $condition) {
+    deleteAnahtarlar(input: $input, condition: $condition) {
       id
       tagName
       createdAt
       updatedAt
-      postsTagsId
+      icerikTagsId
     }
   }
 `;
-export const createPosts = /* GraphQL */ `
-  mutation CreatePosts(
-    $input: CreatePostsInput!
-    $condition: ModelPostsConditionInput
+export const createIcerik = /* GraphQL */ `
+  mutation CreateIcerik(
+    $input: CreateIcerikInput!
+    $condition: ModelIcerikConditionInput
   ) {
-    createPosts(input: $input, condition: $condition) {
+    createIcerik(input: $input, condition: $condition) {
       id
       title
       content
@@ -104,7 +104,7 @@ export const createPosts = /* GraphQL */ `
           active
           createdAt
           updatedAt
-          postsCategoryId
+          icerikCategoryId
         }
         nextToken
       }
@@ -114,7 +114,7 @@ export const createPosts = /* GraphQL */ `
           tagName
           createdAt
           updatedAt
-          postsTagsId
+          icerikTagsId
         }
         nextToken
       }
@@ -125,12 +125,12 @@ export const createPosts = /* GraphQL */ `
     }
   }
 `;
-export const updatePosts = /* GraphQL */ `
-  mutation UpdatePosts(
-    $input: UpdatePostsInput!
-    $condition: ModelPostsConditionInput
+export const updateIcerik = /* GraphQL */ `
+  mutation UpdateIcerik(
+    $input: UpdateIcerikInput!
+    $condition: ModelIcerikConditionInput
   ) {
-    updatePosts(input: $input, condition: $condition) {
+    updateIcerik(input: $input, condition: $condition) {
       id
       title
       content
@@ -141,7 +141,7 @@ export const updatePosts = /* GraphQL */ `
           active
           createdAt
           updatedAt
-          postsCategoryId
+          icerikCategoryId
         }
         nextToken
       }
@@ -151,7 +151,7 @@ export const updatePosts = /* GraphQL */ `
           tagName
           createdAt
           updatedAt
-          postsTagsId
+          icerikTagsId
         }
         nextToken
       }
@@ -162,12 +162,12 @@ export const updatePosts = /* GraphQL */ `
     }
   }
 `;
-export const deletePosts = /* GraphQL */ `
-  mutation DeletePosts(
-    $input: DeletePostsInput!
-    $condition: ModelPostsConditionInput
+export const deleteIcerik = /* GraphQL */ `
+  mutation DeleteIcerik(
+    $input: DeleteIcerikInput!
+    $condition: ModelIcerikConditionInput
   ) {
-    deletePosts(input: $input, condition: $condition) {
+    deleteIcerik(input: $input, condition: $condition) {
       id
       title
       content
@@ -178,7 +178,7 @@ export const deletePosts = /* GraphQL */ `
           active
           createdAt
           updatedAt
-          postsCategoryId
+          icerikCategoryId
         }
         nextToken
       }
@@ -188,7 +188,7 @@ export const deletePosts = /* GraphQL */ `
           tagName
           createdAt
           updatedAt
-          postsTagsId
+          icerikTagsId
         }
         nextToken
       }

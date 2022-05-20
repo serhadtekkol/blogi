@@ -1,78 +1,78 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const onCreateCategories = /* GraphQL */ `
-  subscription OnCreateCategories {
-    onCreateCategories {
+export const onCreateKategoriler = /* GraphQL */ `
+  subscription OnCreateKategoriler {
+    onCreateKategoriler {
       id
       name
       active
       createdAt
       updatedAt
-      postsCategoryId
+      icerikCategoryId
     }
   }
 `;
-export const onUpdateCategories = /* GraphQL */ `
-  subscription OnUpdateCategories {
-    onUpdateCategories {
+export const onUpdateKategoriler = /* GraphQL */ `
+  subscription OnUpdateKategoriler {
+    onUpdateKategoriler {
       id
       name
       active
       createdAt
       updatedAt
-      postsCategoryId
+      icerikCategoryId
     }
   }
 `;
-export const onDeleteCategories = /* GraphQL */ `
-  subscription OnDeleteCategories {
-    onDeleteCategories {
+export const onDeleteKategoriler = /* GraphQL */ `
+  subscription OnDeleteKategoriler {
+    onDeleteKategoriler {
       id
       name
       active
       createdAt
       updatedAt
-      postsCategoryId
+      icerikCategoryId
     }
   }
 `;
-export const onCreateTags = /* GraphQL */ `
-  subscription OnCreateTags {
-    onCreateTags {
+export const onCreateAnahtarlar = /* GraphQL */ `
+  subscription OnCreateAnahtarlar {
+    onCreateAnahtarlar {
       id
       tagName
       createdAt
       updatedAt
-      postsTagsId
+      icerikTagsId
     }
   }
 `;
-export const onUpdateTags = /* GraphQL */ `
-  subscription OnUpdateTags {
-    onUpdateTags {
+export const onUpdateAnahtarlar = /* GraphQL */ `
+  subscription OnUpdateAnahtarlar {
+    onUpdateAnahtarlar {
       id
       tagName
       createdAt
       updatedAt
-      postsTagsId
+      icerikTagsId
     }
   }
 `;
-export const onDeleteTags = /* GraphQL */ `
-  subscription OnDeleteTags {
-    onDeleteTags {
+export const onDeleteAnahtarlar = /* GraphQL */ `
+  subscription OnDeleteAnahtarlar {
+    onDeleteAnahtarlar {
       id
       tagName
       createdAt
       updatedAt
-      postsTagsId
+      icerikTagsId
     }
   }
 `;
-export const onCreatePosts = /* GraphQL */ `
-  subscription OnCreatePosts {
-    onCreatePosts {
+export const onCreateIcerik = /* GraphQL */ `
+  subscription OnCreateIcerik {
+    onCreateIcerik {
       id
       title
       content
@@ -83,7 +83,7 @@ export const onCreatePosts = /* GraphQL */ `
           active
           createdAt
           updatedAt
-          postsCategoryId
+          icerikCategoryId
         }
         nextToken
       }
@@ -93,7 +93,7 @@ export const onCreatePosts = /* GraphQL */ `
           tagName
           createdAt
           updatedAt
-          postsTagsId
+          icerikTagsId
         }
         nextToken
       }
@@ -104,9 +104,9 @@ export const onCreatePosts = /* GraphQL */ `
     }
   }
 `;
-export const onUpdatePosts = /* GraphQL */ `
-  subscription OnUpdatePosts {
-    onUpdatePosts {
+export const onUpdateIcerik = /* GraphQL */ `
+  subscription OnUpdateIcerik {
+    onUpdateIcerik {
       id
       title
       content
@@ -117,7 +117,7 @@ export const onUpdatePosts = /* GraphQL */ `
           active
           createdAt
           updatedAt
-          postsCategoryId
+          icerikCategoryId
         }
         nextToken
       }
@@ -127,7 +127,7 @@ export const onUpdatePosts = /* GraphQL */ `
           tagName
           createdAt
           updatedAt
-          postsTagsId
+          icerikTagsId
         }
         nextToken
       }
@@ -138,9 +138,9 @@ export const onUpdatePosts = /* GraphQL */ `
     }
   }
 `;
-export const onDeletePosts = /* GraphQL */ `
-  subscription OnDeletePosts {
-    onDeletePosts {
+export const onDeleteIcerik = /* GraphQL */ `
+  subscription OnDeleteIcerik {
+    onDeleteIcerik {
       id
       title
       content
@@ -151,7 +151,7 @@ export const onDeletePosts = /* GraphQL */ `
           active
           createdAt
           updatedAt
-          postsCategoryId
+          icerikCategoryId
         }
         nextToken
       }
@@ -161,7 +161,7 @@ export const onDeletePosts = /* GraphQL */ `
           tagName
           createdAt
           updatedAt
-          postsTagsId
+          icerikTagsId
         }
         nextToken
       }

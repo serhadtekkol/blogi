@@ -1,69 +1,69 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const getCategories = /* GraphQL */ `
-  query GetCategories($id: ID!) {
-    getCategories(id: $id) {
+export const getKategoriler = /* GraphQL */ `
+  query GetKategoriler($id: ID!) {
+    getKategoriler(id: $id) {
       id
       name
       active
       createdAt
       updatedAt
-      postsCategoryId
+      icerikCategoryId
     }
   }
 `;
-export const listCategories = /* GraphQL */ `
-  query ListCategories(
-    $filter: ModelCategoriesFilterInput
+export const listKategorilers = /* GraphQL */ `
+  query ListKategorilers(
+    $filter: ModelKategorilerFilterInput
     $limit: Int
     $nextToken: String
   ) {
-    listCategories(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    listKategorilers(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
         id
         name
         active
         createdAt
         updatedAt
-        postsCategoryId
+        icerikCategoryId
       }
       nextToken
     }
   }
 `;
-export const getTags = /* GraphQL */ `
-  query GetTags($id: ID!) {
-    getTags(id: $id) {
+export const getAnahtarlar = /* GraphQL */ `
+  query GetAnahtarlar($id: ID!) {
+    getAnahtarlar(id: $id) {
       id
       tagName
       createdAt
       updatedAt
-      postsTagsId
+      icerikTagsId
     }
   }
 `;
-export const listTags = /* GraphQL */ `
-  query ListTags(
-    $filter: ModelTagsFilterInput
+export const listAnahtarlars = /* GraphQL */ `
+  query ListAnahtarlars(
+    $filter: ModelAnahtarlarFilterInput
     $limit: Int
     $nextToken: String
   ) {
-    listTags(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    listAnahtarlars(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
         id
         tagName
         createdAt
         updatedAt
-        postsTagsId
+        icerikTagsId
       }
       nextToken
     }
   }
 `;
-export const getPosts = /* GraphQL */ `
-  query GetPosts($id: ID!) {
-    getPosts(id: $id) {
+export const getIcerik = /* GraphQL */ `
+  query GetIcerik($id: ID!) {
+    getIcerik(id: $id) {
       id
       title
       content
@@ -74,7 +74,7 @@ export const getPosts = /* GraphQL */ `
           active
           createdAt
           updatedAt
-          postsCategoryId
+          icerikCategoryId
         }
         nextToken
       }
@@ -84,7 +84,7 @@ export const getPosts = /* GraphQL */ `
           tagName
           createdAt
           updatedAt
-          postsTagsId
+          icerikTagsId
         }
         nextToken
       }
@@ -95,13 +95,13 @@ export const getPosts = /* GraphQL */ `
     }
   }
 `;
-export const listPosts = /* GraphQL */ `
-  query ListPosts(
-    $filter: ModelPostsFilterInput
+export const listIceriks = /* GraphQL */ `
+  query ListIceriks(
+    $filter: ModelIcerikFilterInput
     $limit: Int
     $nextToken: String
   ) {
-    listPosts(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    listIceriks(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
         id
         title
@@ -113,7 +113,7 @@ export const listPosts = /* GraphQL */ `
             active
             createdAt
             updatedAt
-            postsCategoryId
+            icerikCategoryId
           }
           nextToken
         }
@@ -123,7 +123,7 @@ export const listPosts = /* GraphQL */ `
             tagName
             createdAt
             updatedAt
-            postsTagsId
+            icerikTagsId
           }
           nextToken
         }
